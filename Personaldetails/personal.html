@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="personal.css">
+    
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo">
+    </header>
+    <div class="nav_form">
+        <nav>
+            <h3>Navigate</h3>
+            <a href="#">Personal Details</a>
+            <a href="#">Qualifications Details</a>
+            <a href="#">PHD Details</a>
+            <a href="#">Experience Details</a>
+        </nav>
+        <div class="outer_form">
+           <h1 class="common">Personal Profile</h1>
+           <form action="">
+           <div class="personal_section-1 common">
+           <h3>Personal Details</h3>
+        <div>
+                <select name="title" required>
+                    <option value="Gender">Title</option>
+                    <option value="Prof.">Prof.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mr.">Mr.</option>
+                  </select>
+                  <input type="text" name="firstName" placeholder="First Name" required />
+                  <input type="text" name="middleName" placeholder="Middle Name" />
+                  <input type="text" name="lastName" placeholder="Last Name" required />
+                  <input type="date" name="dateOfBirth" placeholder="Date Of Birth" required/>
+                  <select name="gender">
+                    <option value="Gender">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Transgender">Transgender</option>
+                  </select>
+            </div>
+        </div>
+    
+        <div class="parents_section-2 common">
+            <h3>Parent Details</h3>
+            <div class="chk">
+              <input type="text" name="fatherName" placeholder="Father's Name" required/>
+              <input type="text" name="motherName" placeholder="Mother's Name" required/>
+            </div>
+          </div>
+    
+          <div class="martial_section-3 common">
+                <h3>Martial Status</h3>
+                <div>
+                <select name="martialStatus" onClick={handleChange(this)}>
+                  <option value="Martial_Status">Martial Status</option>
+                  <option value="Married">Married</option>
+                  <option value="Unmarried">Unmarried</option>
+                  <option value="Widow">Widow</option>
+                  <option value="Divorced">Divorced</option>
+                </select>
+                  <input type="text" id="spouse_name" name="spouseName" placeholder="Spouse Name" />
+          </div>
+        </div>
+        <div class="permanentAddress_section-4 common">
+    <h3>Present Address</h3>
+    <div>
+      <input type="text" id="House No Floor" name="houseNo" placeholder="House No Floor" required style="margin-left: 4px"/>
+      <input type="text" id="Street/Locality" name="street" placeholder="Street/Locality" required />
+      <input type="text" id="City" name="city" placeholder="City" required />
+      <input type="text" id="State" name="state" placeholder="State" required />
+      <input type="text" id="country" name="country" placeholder="Country" required />
+      <input type="number" id="pincode" name="pincode" placeholder="Pincode" required />
+      <input class="box" type='checkbox' name="filladdress" id="filladdress" onClick="fillAddress()" />
+    </div>
+    </div>
+    
+    <div class="contact_section-5 common">
+        <h3>Contact Details</h3>
+        <div>
+            <input type="number" id=" LandLine No" name="landlineNo" placeholder="LandLine No." />
+            <input type="number" id=" Mobile No" name="mobileNo" placeholder="Mobile.No" required />
+            <input type="number" id="Alternate_Mobile_No" mame="alternateMobileNo" placeholder="Alternate Mobile No"required />
+            <input type="email" name="personalEmail" placeholder="Personal Mail ID" required />
+            <input type="email" name="officialEmail" placeholder="Official Mail ID" required />    
+        </div>  
+    </div>
+     
+    <div class="governmentID_section-6 common">
+    <h3>Government ID Proofs</h3>
+    <div>
+        <input type="text" name="adhar" placeholder="Aadhar Number" required />
+        <input type="text" name="adhar" placeholder="PAN Number" required />
+    </div>
+    </div>
+    
+    <div class="HRdetails_section-7 common">
+    <h3>HR</h3>
+    <div>
+        <input type="text" name="dateOfJoin" placeholder="Date of Joining" />
+        <input type="text" name="designation" placeholder="Designation" />
+        <input type="text" name="department" placeholder="Department" />
+        <select name="isLeft">
+            <option value="Is Left">Is Left</option>
+            <option value="Yes">YES</option>
+            <option value="No">No</option>
+          </select>
+          <input type="text" name="dateOfRelieving" placeholder="Date of Relieving"/>
+    </div>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
